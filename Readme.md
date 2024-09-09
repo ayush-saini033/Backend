@@ -11,3 +11,8 @@
 
 >`sudo npm install -g nodemon`
 > ## nodemon is a tool that helps develop node.js based application by automatically restarting the node application when file change in the directory are detected
+
+## To stop the running server on the conoflict port number
+>`lsof -i tcp:<port>`
+
+>`sudo kill -9 <pid>`
