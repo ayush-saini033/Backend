@@ -11,6 +11,8 @@ server.on('request', (req,res) => {
         })
     
         */
+
+        /*
        const rstream = fs.createReadStream('input.txt')
 
        rstream.on('data', (chunkdata) =>{
@@ -23,6 +25,10 @@ server.on('request', (req,res) => {
         console.log(err)
         res.end('file not found')
        })
+        */
+
+    const rstream = fs.createReadStream('input.txt');
+    rstream.pipe(res)
 })
 
 
