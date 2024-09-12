@@ -8,11 +8,39 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.send("Welcome to my about page")
+    res.write('<h1>Hii My name is Ayush saini <h1>')
+    res.send()
+    // res.send("Welcome to my about page")
 })
 
 app.get('/contact', (req, res) => {
     res.status(200).send("Welcome to my contact page")
+})
+
+app.get('/temp', (req, res) => {
+    res.status(200).send([
+        {
+            id: 1,
+            name: "vinod"
+        },
+        {
+            id: 2,
+            name: "Ayush"
+        }
+    ])
+})
+
+app.get('/json', (req,res) => {
+    res.json([
+        {
+            id: 1,
+            name: "vinod"
+        },
+        {
+            id: 2,
+            name: "Ayush"
+        }
+    ])
 })
 
 app.listen(port, () => {
