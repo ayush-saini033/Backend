@@ -16,3 +16,5 @@
 >`lsof -i tcp:<port>`
 
 >`sudo kill -9 <pid>`
+
+> `npm install requests`
