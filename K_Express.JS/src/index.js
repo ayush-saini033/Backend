@@ -1,6 +1,18 @@
 const express = require('express')
-
+const path = require('path')
 const app = express();
+
+// there are two types of path
+// relative, absolute
+
+// console.log(__dirname)
+
+const staticPath = path.join(__dirname, "../public")
+
+
+
+// builtin middleware
+app.use(express.static(staticPath));
 
 // routing
 // app.get(route, callback)
