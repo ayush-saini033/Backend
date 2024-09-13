@@ -18,3 +18,9 @@
 >`sudo kill -9 <pid>`
 
 > `npm install requests`
+
+> `npm install express`
+
+> `npm install hbs` (handlebars.js)
+
+> `nodemon src/index.js -e js,hbs`

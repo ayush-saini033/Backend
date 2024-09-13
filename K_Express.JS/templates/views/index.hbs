@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+  {{>head}}
+
+  <body>
+    
+    {{>header}}
+
+    <!-- -------------------<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,47 +20,7 @@
     />
     <title>ThapaTechnical Website</title>
     <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <!-- left side menu  -->
-        <div class="left-side-menu">
-          <div class="logo">
-            <a href="#">
-              <img src="/images/logo1.png" alt="logo" />
-            </a>
-          </div>
-
-          <div class="sub-menu">
-            <a href="#">
-              <li>Home</li>
-            </a>
-            <a href="#section-two">
-              <li>About Us</li>
-            </a>
-            <a href="#section-third">
-              <li>Goals</li>
-            </a>
-            <a href="#section-five">
-              <li>{{tips}}</li>
-            </a>
-          </div>
-        </div>
-
-        <!-- right side menu  -->
-        <div class="right-side-menu">
-          <div class="sub-menu">
-            <a href="#">
-              <li>Log In</li>
-            </a>
-            <button>Sign Up</button>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- ----------------------------- our hero section start, 
+  </head>---------- our hero section start, 
       Plz susbsribe to Thapa Technical. It means a world to me. 
         ---------------------------------------------------------------------- -->
     <section class="main-hero-section">
@@ -220,39 +187,7 @@
 
     <!-- ----------------------------- our 6th section start 
         ---------------------------------------------------------------------- -->
-
-    <footer>
-      <div class="logo-div">
-        <img src="images/logo1.png" alt="logo" />
-        <p>@2021 Thapatechnical</p>
-      </div>
-
-      <div class="footer-menu">
-        <div class="footer-div-2">
-          <h4>Products</h4>
-          <a href="#"><li>pricing</li></a>
-          <a href="#"><li>pricing</li></a>
-        </div>
-
-        <div class="footer-div-3">
-          <h4>Abouts</h4>
-          <a href="#"><li>pricing</li></a>
-          <a href="#"><li>pricing</li></a>
-        </div>
-
-        <div class="footer-div-4">
-          <h4>Blogs</h4>
-          <a href="#"><li>pricing</li></a>
-          <a href="#"><li>pricing</li></a>
-        </div>
-
-        <div class="footer-div-5">
-          <h4>Get In Touch</h4>
-          <a href="#"><li>Questions Or Feedback?</li></a>
-          <a href="#"><li>We’ll love to help you</li></a>
-        </div>
-      </div>
-    </footer>
+    {{>footer}}
 
     <!-- ----------------------------- our 7th section  social media start 
         ---------------------------------------------------------------------- -->

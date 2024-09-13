@@ -15,6 +15,9 @@
     --button-background: #4b709e;
     --primary-button-background: #fe7649;
     --background-color: #f0f7ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   h1,
@@ -712,7 +715,8 @@
     footer .footer-menu h4 {
       font-size: 1.5rem;
     }
-  
+
+
     /* icons bar  */
     .icon-bar {
       top: 35%;

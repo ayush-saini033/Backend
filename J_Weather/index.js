@@ -19,7 +19,7 @@ const homeFile = fs.readFileSync('Home.html', 'utf-8')
 
 const server = http.createServer((req, res) => {
     if(req.url === '/'){
-        requests('https://api.openweathermap.org/data/2.5/weather?q=alwar&appid=1af77fe152bea2a7f96f45b102c97dbf')
+        requests(`https://api.openweathermap.org/data/2.5/weather?q=alwar&appid=1af77fe152bea2a7f96f45b102c97dbf`)
         .on('data', (chunk) => {
             const objData = JSON.parse(chunk);
             const newarr = [objData]

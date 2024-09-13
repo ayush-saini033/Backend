@@ -4,13 +4,14 @@
   "description": "express tutorial",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --ext js,hbs index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ayush saini",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0",
-    "express-handlebars": "^8.0.1",
-    "hbs": "^4.2.0"
+    "hbs": "^4.2.0",
+    "requests": "^0.3.0"
   }
 }
