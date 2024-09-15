@@ -24,3 +24,5 @@
 > `npm install hbs` (handlebars.js)
 
 > `nodemon src/index.js -e js,hbs`
+
+> `npm i validator`
